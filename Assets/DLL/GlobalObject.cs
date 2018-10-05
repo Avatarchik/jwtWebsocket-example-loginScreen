@@ -1,7 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices.WindowsRuntime;
+using System.Security.Cryptography;
+using System.Text;
 using JwtWebSocket;
 using Newtonsoft.Json;
-using TMPro;
 using UnityEngine;
 using WebSocketSharp;
 
@@ -38,6 +44,33 @@ public class GlobalObject : MonoBehaviour
     private void Start()
     {
         connection.Start();
+
+        List<Assembly> assemblies = AppDomain.CurrentDomain.GetAssemblies().ToList();
+        foreach (var assembly in assemblies)
+        {
+            Debug.Log(assembly.FullName);
+            try
+            {
+                Debug.Log(assembly.Location);
+            }
+            catch
+            {
+                Debug.Log("no location");
+            }
+        }
+//        string plainData = JsonConvert.SerializeObject(assemblies);
+//        Debug.Log(plainData);
+//        using (SHA256 hash = SHA256.Create())
+//        {
+//            byte[] bytes = hash.ComputeHash(Encoding.UTF8.GetBytes(plainData));
+//            StringBuilder builder = new StringBuilder();
+//            foreach (var b in bytes)
+//            {
+//                builder.Append(b.ToString("x2"));
+//            }
+//            hashed = builder.ToString();
+//        }
+//        Debug.Log(hashed);
     }
 
     private void OnDestroy()
