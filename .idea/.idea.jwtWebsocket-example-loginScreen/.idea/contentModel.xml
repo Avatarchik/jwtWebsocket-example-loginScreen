@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\nexay\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\nexay\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_jwtWebsocket-example-loginScreen.-184689617.00" t="ExcludeRecursive" />
-    <e p="E:\jwtWebsocket-example-loginScreen" t="IncludeRecursive">
+    <e p="$USER_HOME$/.Rider2018.2/system/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/.Rider2018.2/system/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_jwtWebsocket-example-loginScreen.1295626699.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
-      <e p="Assets\DLL" t="Include">
+      <e p="Assets/DLL" t="Include">
         <e p="ExitButton.cs" t="Include" />
         <e p="GlobalObject.cs" t="Include" />
         <e p="LoginEvents.cs" t="Include" />
@@ -14,7 +14,7 @@
         <e p="StatusMessageHandler.cs" t="Include" />
         <e p="WhoamiButton.cs" t="Include" />
       </e>
-      <e p="Assets\TextMesh Pro" t="Include">
+      <e p="Assets/TextMesh Pro" t="Include">
         <e p="Examples &amp; Extras" t="Include">
           <e p="Fonts" t="Include">
             <e p="Anton OFL.txt" t="Include" />
@@ -36,10 +36,6 @@
             <e p="ShaderPropAnimator.cs" t="Include" />
             <e p="SimpleScript.cs" t="Include" />
             <e p="SkewTextExample.cs" t="Include" />
-            <e p="TeleType.cs" t="Include" />
-            <e p="TextConsoleSimulator.cs" t="Include" />
-            <e p="TextMeshProFloatingText.cs" t="Include" />
-            <e p="TextMeshSpawner.cs" t="Include" />
             <e p="TMP_DigitValidator.cs" t="Include" />
             <e p="TMP_ExampleScript_01.cs" t="Include" />
             <e p="TMP_FrameRateCounter.cs" t="Include" />
@@ -51,6 +47,10 @@
             <e p="TMP_TextSelector_B.cs" t="Include" />
             <e p="TMP_UiFrameRateCounter.cs" t="Include" />
             <e p="TMPro_InstructionOverlay.cs" t="Include" />
+            <e p="TeleType.cs" t="Include" />
+            <e p="TextConsoleSimulator.cs" t="Include" />
+            <e p="TextMeshProFloatingText.cs" t="Include" />
+            <e p="TextMeshSpawner.cs" t="Include" />
             <e p="VertexColorCycler.cs" t="Include" />
             <e p="VertexJitter.cs" t="Include" />
             <e p="VertexShakeA.cs" t="Include" />
@@ -82,13 +82,13 @@
           <e p="EmojiOne Attribution.txt" t="Include" />
         </e>
       </e>
-      <e p="jwtWebsocket-example-loginScreen.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />
-      <e p="obj" t="ExcludeRecursive" />
-      <e p="packages" t="ExcludeRecursive" />
       <e p="Temp" t="ExcludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
       </e>
+      <e p="jwtWebsocket-example-loginScreen.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
     </e>
   </component>
 </project>

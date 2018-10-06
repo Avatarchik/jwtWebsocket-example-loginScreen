@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Security.Cryptography;
-using System.Text;
 using JwtWebSocket;
-using Newtonsoft.Json;
 using UnityEngine;
 using WebSocketSharp;
 
@@ -45,19 +41,29 @@ public class GlobalObject : MonoBehaviour
     {
         connection.Start();
 
+        TextWriter tw = new StreamWriter("assemblies.txt");
+        
         List<Assembly> assemblies = AppDomain.CurrentDomain.GetAssemblies().ToList();
+        tw.WriteLine("count : " + assemblies.Count);
         foreach (var assembly in assemblies)
         {
             Debug.Log(assembly.FullName);
+            tw.WriteLine(assembly.FullName);
             try
             {
                 Debug.Log(assembly.Location);
+                tw.WriteLine(assembly.Location);
             }
             catch
             {
                 Debug.Log("no location");
+                tw.WriteLine("no location");
             }
         }
+
+        tw.Close();
+
+
 //        string plainData = JsonConvert.SerializeObject(assemblies);
 //        Debug.Log(plainData);
 //        using (SHA256 hash = SHA256.Create())
